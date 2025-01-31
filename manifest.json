@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Multi-Purpose Tool",
+  "version": "1.0.0",
+  "description": "A Multi-Purpose Chrome extension",
+  "author": "Max Attianese",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": ["https://*/*", "http://*/*"]
+}

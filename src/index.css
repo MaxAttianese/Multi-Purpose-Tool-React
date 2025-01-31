@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+select,
+button {
+  border: 1px solid;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  &:hover {
+    @apply bg-violet-400;
+    color: white;
+  }
+}
