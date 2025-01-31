@@ -1,15 +1,14 @@
 import { ReactNode } from "react";
-import { CharacterCounter } from "../components/functional/characterCounter";
-import { Theme } from "../components/functional/changeTheme";
+import { CharacterCounter } from "../components/features/character-counter";
+import { Theme } from "../components/features/change-theme";
 
 export type Features = {
-  [key: string]: { id: string; title: string; component: ReactNode };
+  [key: string]: { title: string; component: ReactNode };
 };
 
 export const features: Features = {
-  theme: { id: "theme", title: "Theme", component: <Theme /> },
+  theme: { title: "Theme", component: <Theme /> },
   "character-counter": {
-    id: "character-counter",
     title: "Character Counter",
     component: <CharacterCounter />,
   },
